@@ -62,7 +62,7 @@ const EventCardVertical = () => {
 
         <div className="flex items-center justify-between w-full h-20px">
           <div className="flex gap-3 items-center  w-[155px]  ">
-            <MyAvatarGroup />
+            <MyAvatarGroup size={20} />
             <span
               className={`text-[6px] ${poppins.className} text-center font-normal `}
             >
