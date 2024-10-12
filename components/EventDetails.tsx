@@ -1,37 +1,18 @@
-import { Calendar, Clock } from "lucide-react";
 import React from "react";
-import { Roboto, Inter } from "next/font/google";
+import GetTicketButton from "./GetTicketButton";
 
+import EventDesc from "./EventDesc";
+import RegisterEvent from "./RegisterEvent";
+import EventAbout from "./EventAbout";
 
-const roboto = Roboto({ weight: ["700"], subsets: ["latin"] });
-const inter = Inter({ weight: ["700"], subsets: ["latin"] });
 const EventDetails = () => {
   return (
-    <div>
-      <div>{/* location */}</div>
-      <div>{/* map */}</div>
-      <div>{/* Title */}</div>
-      <hr />
-      {/* date and time */}
-      <div>
-        <div>
-          <p>10th, July, 2020</p>
-          <Calendar />
-        </div>
-        <div>
-          <p>10:00 PM</p>
-          <Clock />
-        </div>
-      </div>
+    <div className="m-4 p-4 flex flex-col gap-3 items-center justify-center">
+        <EventAbout />
       {/* description */}
-      <div>
-        <p className={`font-bold ${Inter.className} text-[18px]`}>
-            Description
-        </p>
-        <p>
-
-        </p>
-      </div>
+     <EventDesc />
+     
+      <GetTicketButton />
     </div>
   );
 };
