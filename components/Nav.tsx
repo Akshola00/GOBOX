@@ -12,7 +12,7 @@ const Nav = () => {
         className={`font-bold text-lg leading-3 text-[#27282B] ${inter.className} `}
       >
         <Link href="/">
-        e-Ticketing
+        GOBOX
         </Link>
       </p>
       <Hamburger />
