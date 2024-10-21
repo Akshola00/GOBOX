@@ -15,6 +15,9 @@ const RegisterEvent = () => {
       <Input type="email" placeholder="Email" />
       <div className="w-full flex items-center justify-center">
         <Button
+          onClick={() => {
+            alert("Rgistered Succesfully");
+          }}
           className={` ${lato.className} text-center items-center bg-[#765BFF] h-[50px] w-[90%] rounded-[73px]  `}
         >
           REGISTER
