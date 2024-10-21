@@ -6,6 +6,7 @@ import { Roboto } from "next/font/google";
 import Web3 from "../app/assets/web3.png";
 import { Button } from "./ui/button";
 import MyAvatarGroup from "./MyAvatarGroup";
+import Link from "next/link";
 
 const poppins = Poppins({ weight: ["700"], subsets: ["latin"] });
 const inter = Inter({ weight: ["700"], subsets: ["latin"] });
@@ -13,7 +14,7 @@ const roboto = Roboto({ weight: ["700"], subsets: ["latin"] });
 
 const EventCardVertical = () => {
   return (
-    <div className=" overflow-hidden rounded-xl flex flex-col shadow-2xl">
+    <div className=" overflow-hidden rounded-xl w-[180px] flex flex-col shadow-2xl">
       <div className="flex-1 bg-red-500 ">
         <Image
           className="w-full max-w-[180px] h-full object-cover"
@@ -21,7 +22,9 @@ const EventCardVertical = () => {
           src={Web3}
         />
       </div>
-      <div className="flex-1 px-2 py-2 flex-col flex gap-1">
+      
+      
+      <Link href="/EventDetail" className="flex-1 px-2 py-2 flex-col flex gap-1">
         <div className=" flex-col flex gap-1">
           <div className="flex items-center justify-between">
             <p className="font-normal text-[8.53px] text-[#2F3B48] ">
@@ -73,7 +76,8 @@ const EventCardVertical = () => {
             <Button>Opened</Button>
           </div> */}
         </div>
-      </div>
+      </Link>
+      
     </div>
   );
 };

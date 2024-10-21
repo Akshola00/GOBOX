@@ -1,5 +1,4 @@
 "use client"
-
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -21,10 +20,13 @@ import {Inter} from 'next/font/google'
 import { WagmiProvider } from "wagmi";
 import { config } from "./config";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { title } from "process";
+import { Description } from "@radix-ui/react-dialog";
 
 const inter = Inter({
   subsets: ['latin'], weight:['400', '500', '600', '700'], variable: '--font-inter'
 })
+
 
 
 

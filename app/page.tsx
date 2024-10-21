@@ -8,7 +8,12 @@ import Myserach from "@/components/Myserach";
 import Nav from "@/components/Nav";
 import PopularEvents from "@/components/PopularEvents";
 import Image from "next/image";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "GOBOX",
+  description: "E-TICKETING APPLICATION",
+};
 export default function Home() {
   return (
     <>

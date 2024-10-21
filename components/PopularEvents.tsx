@@ -3,7 +3,7 @@ import EventcardHorizontal from './EventcardHorizontal'
 
 const PopularEvents = () => {
   return (
-    <div className='flex flex-col m-4 gap-2'>
+    <div className='grid gap-6 p-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
         <p className=''>Popular Events</p>
         <EventcardHorizontal />
         <EventcardHorizontal />
